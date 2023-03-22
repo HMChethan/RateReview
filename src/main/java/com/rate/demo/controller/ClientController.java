@@ -22,6 +22,7 @@ public class ClientController {
 	public ResponseEntity<List<ClientEntity>> getAllClients()  throws JsonMappingException, JsonProcessingException
 	{
 		List<ClientEntity> c=clientService.getClientData();
+		//sysgfhjrukfljhl
 		return ResponseEntity.ok(c);
 		}
 	@RequestMapping(value="/addClient",method = RequestMethod.POST)
