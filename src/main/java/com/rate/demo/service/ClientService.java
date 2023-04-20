@@ -14,12 +14,12 @@ public class ClientService {
 	@Autowired
 	private Clientrepositroy testrepositroy;
 
-	public List<ClientEntity> getClientData() {
-		List<ClientEntity> list = new ArrayList<ClientEntity>();
-		ClientEntity c1 = new ClientEntity(1, "flipkart", 1.2, "abc@123", "xyz@123");
-		list.add(c1);
-		return list;
-	}
+//	public List<ClientEntity> getClientData() {
+//		List<ClientEntity> list = new ArrayList<ClientEntity>();
+//		ClientEntity c1 = new ClientEntity(1, "flipkart", 1.2, "abc@123", "xyz@123");
+//		list.add(c1);
+//		return list;
+//	}
 
 	public ClientEntity addClientdata(ClientEntity cliententity) {
 		ClientEntity c = testrepositroy.save(cliententity);
