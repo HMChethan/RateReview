@@ -49,13 +49,13 @@ public class ReviewController {
 			return ResponseEntity.status(401).body(null);
 		}
 	 }
-	@RequestMapping(value = "/gettopreview",method = RequestMethod.GET)
-	 public ResponseEntity<Double> getTopreviews(@RequestHeader("pid") int pid, @RequestHeader("productname")String productname )  throws JsonMappingException, JsonProcessingException
-		{
-			double largereview=reviewService.getTopreview(pid,productname);
-		 
-			 return ResponseEntity.ok(largereview);
-			 }
+//	@RequestMapping(value = "/gettopreview",method = RequestMethod.GET)
+//	 public ResponseEntity<Double> getTopreviews(@RequestHeader("pid") int pid, @RequestHeader("productname")String productname )  throws JsonMappingException, JsonProcessingException
+//		{
+//			double largereview=reviewService.getTopreview(pid,productname);
+//		 
+//			 return ResponseEntity.ok(largereview);
+//			 }
 	@RequestMapping("/getallreviewonproduct")
 	 public ResponseEntity<List<ReviewEntity>> getTopreviews(@RequestHeader("key") int id)  throws JsonMappingException, JsonProcessingException
 		{
