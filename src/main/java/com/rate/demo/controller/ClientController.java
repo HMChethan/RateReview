@@ -24,6 +24,7 @@ public class ClientController {
 	{
 		List<ClientEntity> c=clientService.getClientData();
 		//sysgfhjrukfljhl
+		//jhgfdfghjjhg
 		return ResponseEntity.ok(c);
 		}
 	@RequestMapping(value="/addClient",method = RequestMethod.POST)
