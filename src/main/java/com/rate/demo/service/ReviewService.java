@@ -22,29 +22,29 @@ public class ReviewService {
 		ReviewEntity r=testrepositroy1.save(reviewtable);
 		return r;
    }
-	public double getTopreview(int pid ,String productname) {
-		double large=testrepositroy1.getById(pid).getProductRating();
-		ReviewEntity id=testrepositroy1.getById(pid);
-   try {
-		for(int i=pid;i<=15;i++)
-		{
-			if(productname.equalsIgnoreCase(testrepositroy1.getById(i).getProductName()))
-			{
-				ReviewEntity r=testrepositroy1.getById(i);
-        	    String s=r.getProductName();
-				 if(r.getProductRating()>large)
-			         {
-					large=r.getProductRating();
-					
-               }
-			}
-		}
-   }
-   catch (Exception e) {
-	}
-     return large;
-		
-	}
+//	public double getTopreview(int pid ,String productname) {
+//		double large=testrepositroy1.getById(pid).getProductRating();
+//		ReviewEntity id=testrepositroy1.getById(pid);
+//   try {
+//		for(int i=pid;i<=15;i++)
+//		{
+//			if(productname.equalsIgnoreCase(testrepositroy1.getById(i).getProductName()))
+//			{
+//				ReviewEntity r=testrepositroy1.getById(i);
+//        	    String s=r.getProductName();
+//				 if(r.getProductRating()>large)
+//			         {
+//					large=r.getProductRating();
+//					
+//               }
+//			}
+//		}
+//   }
+//   catch (Exception e) {
+//	}
+//     return large;
+//		
+//	}
 	public List<ReviewEntity> getallreview(int id) {
     List<ReviewEntity> reviewEntity=  testrepositroy1.getByProductId(id);
     
