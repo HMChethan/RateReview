@@ -27,11 +27,11 @@ public class ClientController {
 		//jhgfdfghjjhg
 		return ResponseEntity.ok(c);
 		}
-	@RequestMapping(value="/addClient",method = RequestMethod.POST)
-	public ResponseEntity<ClientEntity> addClients(@RequestBody ClientEntity client)  throws JsonMappingException, JsonProcessingException
-	{
-		ClientEntity c=clientService.addClientdata(client);
-	return ResponseEntity.ok(c);
-		}
+//	@RequestMapping(value="/addClient",method = RequestMethod.POST)
+//	public ResponseEntity<ClientEntity> addClients(@RequestBody ClientEntity client)  throws JsonMappingException, JsonProcessingException
+//	{
+//		ClientEntity c=clientService.addClientdata(client);
+//	return ResponseEntity.ok(c);
+//		}
 	
 }
